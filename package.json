@@ -1,6 +1,6 @@
 {
   "name": "instant-table",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Instantly build a react responsive table from your array of objects",
   "main": "dist/index.js",
   "files": [
