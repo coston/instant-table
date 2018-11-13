@@ -1,7 +1,7 @@
 {
   "name": "instant-table",
   "version": "1.0.0",
-  "description": "React instant table builder, just supply data.",
+  "description": "React instant table builder; just supply data.",
   "main": "dist/index.js",
   "files": [
     "dist/Arrow.js",
