@@ -5,8 +5,8 @@ Input data, output a react responsive table ✨
 [![npm downloads](https://img.shields.io/npm/dm/instant-table.svg)](https://www.npmjs.com/package/instant-table)&nbsp;
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io)
 
-##Demo 
-Live demo: [https://instant-table.coston.io](https://instant-table.coston.io)
+## Live Demo 
+[https://instant-table.coston.io](https://instant-table.coston.io)
 
 ## Features
 - Instantly build a table from your array of objects
@@ -43,19 +43,6 @@ const TableExample = () => (
 | tableColor      | `string`  | `optional` | `black`  | set header background color  |
 | headerTextColor      | `string`  | `optional` | `white`  | set header text color |
 
-
-
-## Data Manipulation Examples
-Reshape your data and add components(links, etc)
-```jsx
-const dataset = projectsList.map(({ node }) => ({
-  ...node,
-  'Date Requested': node.originateDate,
-  'Project Name': <Link to={`/project/${node.projectId}`}>{node.name}</Link>,
-  'Date Needed': node.dueDate,
-  'Requester': <ContactNameToInfo contact={node.requester} />,
-}))
-```
 
 ## Contributing
 
