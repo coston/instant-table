@@ -38,6 +38,10 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 _react2.default.Fragment = _react2.default.Fragment || _reactDotFragment2.default;
 
+var posNeg = function posNeg(bool) {
+  return bool ? 1 : -1;
+};
+
 var Table = function (_React$Component) {
   _inherits(Table, _React$Component);
 
@@ -72,7 +76,7 @@ var Table = function (_React$Component) {
       this.setState(function (prevState) {
         return {
           rows: prevState.rows.slice(0).sort(function (a, b) {
-            return sortDir === 'ascending' ? a[i] > b[i] : a[i] < b[i];
+            return sortDir === 'ascending' ? posNeg(a[i] > b[i]) : posNeg(a[i] < b[i]);
           }),
           sortedBy: i,
           sortDir: sortDir

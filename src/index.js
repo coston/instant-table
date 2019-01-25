@@ -7,6 +7,8 @@ import DataList from './DataList'
 
 React.Fragment = React.Fragment || Fragment
 
+const posNeg = bool => (bool ? 1 : -1)
+
 class Table extends React.Component {
   constructor(props) {
     super(props)
@@ -37,7 +39,10 @@ class Table extends React.Component {
     this.setState(prevState => ({
       rows: prevState.rows
         .slice(0)
-        .sort((a, b) => (sortDir === 'ascending' ? a[i] > b[i] : a[i] < b[i])),
+        .sort(
+          (a, b) =>
+            sortDir === 'ascending' ? posNeg(a[i] > b[i]) : posNeg(a[i] < b[i])
+        ),
       sortedBy: i,
       sortDir: sortDir,
     }))

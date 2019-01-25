@@ -3,13 +3,13 @@
 exports[`Render Table 1`] = `
 <styled.div>
   <table
-    aria-labelledby="caption-hxaylpvyb"
+    aria-labelledby="caption-2l5spq8lk"
     className="table-container"
     role="group"
     tabIndex={null}
   >
     <caption
-      id="caption-hxaylpvyb"
+      id="caption-2l5spq8lk"
     />
     <thead>
       <tr>
@@ -1148,13 +1148,13 @@ exports[`Render Table with customizations 1`] = `
   tableColor="#44a08d"
 >
   <table
-    aria-labelledby="caption-uqzn1l312"
+    aria-labelledby="caption-pk3igj42s"
     className="table-container"
     role="group"
     tabIndex={null}
   >
     <caption
-      id="caption-uqzn1l312"
+      id="caption-pk3igj42s"
     >
       Great Data
     </caption>
