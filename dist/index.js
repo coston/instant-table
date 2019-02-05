@@ -14,13 +14,13 @@ var _reactDotFragment = require('react-dot-fragment');
 
 var _reactDotFragment2 = _interopRequireDefault(_reactDotFragment);
 
-var _Arrow = require('./Arrow');
-
-var _Arrow2 = _interopRequireDefault(_Arrow);
-
 var _StyleWrapper = require('./StyleWrapper');
 
 var _StyleWrapper2 = _interopRequireDefault(_StyleWrapper);
+
+var _DataTable = require('./DataTable');
+
+var _DataTable2 = _interopRequireDefault(_DataTable);
 
 var _DataList = require('./DataList');
 
@@ -59,7 +59,7 @@ var Table = function (_React$Component) {
     };
 
     _this.sortBy = _this.sortBy.bind(_this);
-    _this.captionID = 'caption-' + Math.random().toString(36).substr(2, 9);
+    _this.captionID = props.caption;
     return _this;
   }
 
@@ -117,8 +117,6 @@ var Table = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _this2 = this;
-
       return _react2.default.createElement(
         _StyleWrapper2.default,
         {
@@ -126,83 +124,18 @@ var Table = function (_React$Component) {
           tableColor: this.props.tableColor,
           headerTextColor: this.props.headerTextColor
         },
-        _react2.default.createElement(
-          'table',
-          {
-            className: 'table-container',
-            tabIndex: this.state.tabindex,
-            'aria-labelledby': this.captionID,
-            role: 'group'
-          },
-          _react2.default.createElement(
-            'caption',
-            { id: this.captionID },
-            this.props.caption,
-            this.state.tabindex === '0' && _react2.default.createElement(
-              'div',
-              null,
-              _react2.default.createElement(
-                'small',
-                null,
-                '(scroll to see more)'
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'thead',
-            null,
-            _react2.default.createElement(
-              'tr',
-              null,
-              this.state.headers.map(function (header, i) {
-                return _react2.default.createElement(
-                  'th',
-                  {
-                    role: 'columnheader',
-                    scope: 'col',
-                    key: i,
-                    onClick: function onClick() {
-                      return _this2.props.sortable === false ? null : _this2.sortBy(i);
-                    },
-                    'aria-sort': _this2.state.sortedBy === i ? _this2.state.sortDir : 'none'
-                  },
-                  header,
-                  _this2.state.sortedBy === i && _react2.default.createElement(
-                    'button',
-                    {
-                      'aria-label': 'sort by ' + header + ' in ' + (_this2.state.sortDir !== 'ascending' ? 'ascending' : 'descending') + ' order'
-                    },
-                    _react2.default.createElement(_Arrow2.default, {
-                      sortDir: _this2.state.sortDir,
-                      isCurrent: _this2.state.sortedBy === i
-                    })
-                  )
-                );
-              })
-            )
-          ),
-          _react2.default.createElement(
-            'tbody',
-            null,
-            this.state.rows.map(function (row, i) {
-              return _react2.default.createElement(
-                'tr',
-                { key: i },
-                row.map(function (cell, i) {
-                  return _this2.props.rowHeaders && i < 1 ? _react2.default.createElement(
-                    'th',
-                    { scope: 'row', key: i },
-                    cell
-                  ) : _react2.default.createElement(
-                    'td',
-                    { key: i },
-                    cell
-                  );
-                })
-              );
-            })
-          )
-        ),
+        _react2.default.createElement(_DataTable2.default, {
+          tabIndex: this.state.tabindex,
+          captionID: this.captionID,
+          caption: this.props.caption,
+          headers: this.state.headers,
+          rows: this.state.rows,
+          sortBy: this.sortBy,
+          sortedBy: this.state.sortedBy,
+          sortDir: this.state.sortDir,
+          sortable: this.props.sortable,
+          rowHeaders: this.props.rowHeaders
+        }),
         _react2.default.createElement(_DataList2.default, {
           caption: this.props.caption,
           rows: this.state.rows,

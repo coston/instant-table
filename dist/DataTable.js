@@ -19,7 +19,7 @@ var DataTable = function DataTable(props) {
     'table',
     {
       className: 'table-container',
-      tabIndex: props.tabIndex,
+      tabIndex: props.tabindex,
       'aria-labelledby': props.captionID,
       role: 'group'
     },
@@ -27,7 +27,7 @@ var DataTable = function DataTable(props) {
       'caption',
       { id: props.captionID },
       props.caption,
-      props.tabIndex === '0' && _react2.default.createElement(
+      props.tabindex === '0' && _react2.default.createElement(
         'div',
         null,
         _react2.default.createElement(
@@ -51,7 +51,7 @@ var DataTable = function DataTable(props) {
               scope: 'col',
               key: i,
               onClick: function onClick() {
-                return props.sortable ? props.sortedBy(i) : null;
+                return props.sortable === false ? null : props.sortBy(i);
               },
               'aria-sort': props.sortedBy === i ? props.sortDir : 'none'
             },
@@ -59,7 +59,7 @@ var DataTable = function DataTable(props) {
             props.sortedBy === i && _react2.default.createElement(
               'button',
               {
-                'aria-label': 'sort by ' + header + ' in ' + (undefined.state.sortDir !== 'ascending' ? 'ascending' : 'descending') + ' order'
+                'aria-label': 'sort by ' + header + ' in ' + (props.sortDir !== 'ascending' ? 'ascending' : 'descending') + ' order'
               },
               _react2.default.createElement(_Arrow2.default, {
                 sortDir: props.sortDir,
@@ -99,15 +99,15 @@ exports.default = DataTable;
 
 {
   /* <DataTable
-          tabIndex={this.state.tabindex}
-          captionID={this.captionID}
-          caption={this.props.caption}
-          headers={this.state.headers}
-          rows={this.state.rows}
-          sortBy={this.sortBy}
-          sortedBy={this.state.sortedBy}
-          sortDir={this.state.sortDir}
-          sortable={this.props.sortable}
-          rowHeaders={this.props.rowHeaders}
+          tabIndex={props.tabindex}
+          captionID={props.captionID}
+          caption={props.caption}
+          headers={props.headers}
+          rows={props.rows}
+          sortBy={props.sortBy}
+          sortedBy={props.sortedBy}
+          sortDir={props.sortDir}
+          sortable={props.sortable}
+          rowHeaders={props.rowHeaders}
         /> */
 }
