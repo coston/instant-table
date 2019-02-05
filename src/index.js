@@ -21,11 +21,7 @@ class Table extends React.Component {
     }
 
     this.sortBy = this.sortBy.bind(this)
-    this.captionID =
-      'caption-' +
-      Math.random()
-        .toString(36)
-        .substr(2, 9)
+    this.captionID = props.caption
   }
 
   sortBy(i) {
