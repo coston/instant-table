@@ -1,8 +1,8 @@
 import React from 'react'
 import Fragment from 'react-dot-fragment'
 
-import Arrow from './Arrow'
 import StyleWrapper from './StyleWrapper'
+import DataTable from './DataTable'
 import DataList from './DataList'
 
 React.Fragment = React.Fragment || Fragment
@@ -85,70 +85,18 @@ class Table extends React.Component {
         tableColor={this.props.tableColor}
         headerTextColor={this.props.headerTextColor}
       >
-        <table
-          className="table-container"
+        <DataTable
           tabIndex={this.state.tabindex}
-          aria-labelledby={this.captionID}
-          role="group"
-        >
-          <caption id={this.captionID}>
-            {this.props.caption}
-            {this.state.tabindex === '0' && (
-              <div>
-                <small>(scroll to see more)</small>
-              </div>
-            )}
-          </caption>
-          <thead>
-            <tr>
-              {this.state.headers.map((header, i) => (
-                <th
-                  role="columnheader"
-                  scope="col"
-                  key={i}
-                  onClick={() =>
-                    this.props.sortable === false ? null : this.sortBy(i)
-                  }
-                  aria-sort={
-                    this.state.sortedBy === i ? this.state.sortDir : 'none'
-                  }
-                >
-                  {header}
-                  {this.state.sortedBy === i && (
-                    <button
-                      aria-label={`sort by ${header} in ${
-                        this.state.sortDir !== 'ascending'
-                          ? 'ascending'
-                          : 'descending'
-                      } order`}
-                    >
-                      <Arrow
-                        sortDir={this.state.sortDir}
-                        isCurrent={this.state.sortedBy === i}
-                      />
-                    </button>
-                  )}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {this.state.rows.map((row, i) => (
-              <tr key={i}>
-                {row.map(
-                  (cell, i) =>
-                    this.props.rowHeaders && i < 1 ? (
-                      <th scope="row" key={i}>
-                        {cell}
-                      </th>
-                    ) : (
-                      <td key={i}>{cell}</td>
-                    )
-                )}
-              </tr>
-            ))}
-          </tbody>
-        </table>
+          captionID={this.captionID}
+          caption={this.props.caption}
+          headers={this.state.headers}
+          rows={this.state.rows}
+          sortBy={this.sortBy}
+          sortedBy={this.state.sortedBy}
+          sortDir={this.state.sortDir}
+          sortable={this.props.sortable}
+          rowHeaders={this.props.rowHeaders}
+        />
         <DataList
           caption={this.props.caption}
           rows={this.state.rows}
