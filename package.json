@@ -6,6 +6,7 @@
   "files": [
     "dist/Arrow.js",
     "dist/DataList.js",
+    "dist/DataTable.js",
     "dist/index.js",
     "dist/StyleWrapper.js"
   ],
