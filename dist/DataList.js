@@ -1,47 +1,53 @@
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = require("react");
+var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactDotFragment = require('react-dot-fragment');
+
+var _reactDotFragment2 = _interopRequireDefault(_reactDotFragment);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_react2.default.Fragment = _react2.default.Fragment || _reactDotFragment2.default;
 
 var DataList = function DataList(props) {
   return _react2.default.createElement(
-    "div",
-    { className: "lists-container" },
+    'div',
+    { className: 'lists-container' },
     _react2.default.createElement(
-      "h2",
+      'h2',
       null,
       props.caption
     ),
     props.rows.map(function (row, i) {
       return _react2.default.createElement(
-        "div",
+        'div',
         { key: i },
         props.rowHeaders ? _react2.default.createElement(
-          "h3",
+          'h3',
           null,
           row[0]
-        ) : _react2.default.createElement("hr", null),
+        ) : _react2.default.createElement('hr', null),
         _react2.default.createElement(
-          "dl",
+          'dl',
           null,
           props.headers.map(function (header, i) {
             return (props.rowHeaders ? i > 0 : i >= 0) && _react2.default.createElement(
               _react2.default.Fragment,
               { key: i },
               _react2.default.createElement(
-                "dt",
+                'dt',
                 null,
                 header
               ),
               _react2.default.createElement(
-                "dd",
+                'dd',
                 null,
                 row[i]
               )

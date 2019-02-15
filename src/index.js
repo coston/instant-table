@@ -1,11 +1,8 @@
 import React from 'react'
-import Fragment from 'react-dot-fragment'
 
 import StyleWrapper from './StyleWrapper'
 import DataTable from './DataTable'
 import DataList from './DataList'
-
-React.Fragment = React.Fragment || Fragment
 
 const posNeg = bool => (bool ? 1 : -1)
 

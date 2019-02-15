@@ -10,10 +10,6 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDotFragment = require('react-dot-fragment');
-
-var _reactDotFragment2 = _interopRequireDefault(_reactDotFragment);
-
 var _StyleWrapper = require('./StyleWrapper');
 
 var _StyleWrapper2 = _interopRequireDefault(_StyleWrapper);
@@ -35,8 +31,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-_react2.default.Fragment = _react2.default.Fragment || _reactDotFragment2.default;
 
 var posNeg = function posNeg(bool) {
   return bool ? 1 : -1;
