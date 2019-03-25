@@ -40,7 +40,6 @@ const StyleWrapper = styled.div`
 
   th {
     font-weight: bold;
-    white-space: nowrap;
   }
 
   th {
