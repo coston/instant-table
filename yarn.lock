@@ -6408,11 +6408,6 @@ react-dom@^16.4.2, react-dom@^16.8.6:
     prop-types "^15.6.2"
     scheduler "^0.13.6"
 
-react-dot-fragment@^0.2.9:
-  version "0.2.9"
-  resolved "https://registry.yarnpkg.com/react-dot-fragment/-/react-dot-fragment-0.2.9.tgz#c12adc44851f46b6e389edf6ac78c74735b842fa"
-  integrity sha512-mbxKpzkmziIoZzzvsUwUzpY1Y440aQpMsc9wcnm5rb1M4suMuinhzDGkiqkbmfLNTcAB1GimdfzHtaOAar2aYw==
-
 react-emotion@^9.2.8:
   version "9.2.12"
   resolved "https://registry.yarnpkg.com/react-emotion/-/react-emotion-9.2.12.tgz#74d1494f89e22d0b9442e92a33ca052461955c83"
