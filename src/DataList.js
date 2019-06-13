@@ -1,7 +1,4 @@
 import React from 'react'
-import Fragment from 'react-dot-fragment'
-
-React.Fragment = React.Fragment || Fragment
 
 const DataList = props => (
   <div className="lists-container">
