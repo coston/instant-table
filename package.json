@@ -67,7 +67,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-live": "2.2.2",
-    "react-test-renderer": "16.13.0"
+    "react-test-renderer": "16.13.1"
   },
   "keywords": [
     "react",
