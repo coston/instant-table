@@ -78,7 +78,7 @@
     "test": "test"
   },
   "dependencies": {
-    "styled-components": "^5.0.1"
+    "styled-components": "^5.1.0"
   },
   "peerDependencies": {
     "react": "^16.0.0",
