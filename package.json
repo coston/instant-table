@@ -60,7 +60,7 @@
     "enzyme-adapter-react-16": "1.14.0",
     "enzyme-to-json": "3.4.4",
     "identity-obj-proxy": "3.0.0",
-    "jest": "25.5.4",
+    "jest": "26.0.0",
     "mdx-go": "1.1.11",
     "prettier": "2.0.2",
     "prop-types": "15.7.2",
