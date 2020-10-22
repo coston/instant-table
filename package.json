@@ -64,10 +64,10 @@
     "mdx-go": "1.1.11",
     "prettier": "2.0.2",
     "prop-types": "15.7.2",
-    "react": "17.0.0",
-    "react-dom": "17.0.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
     "react-live": "2.2.2",
-    "react-test-renderer": "17.0.0"
+    "react-test-renderer": "17.0.1"
   },
   "keywords": [
     "react",
