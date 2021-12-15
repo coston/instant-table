@@ -3,7 +3,7 @@ Input data, output a react responsive table ✨
 
 [![npm package version](https://badge.fury.io/js/instant-table.svg)](https://www.npmjs.com/package/instant-table)&nbsp;
 [![npm downloads](https://img.shields.io/npm/dm/instant-table.svg)](https://www.npmjs.com/package/instant-table)&nbsp;
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io) [![Greenkeeper badge](https://badges.greenkeeper.io/coston/instant-table.svg)](https://greenkeeper.io/)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io) 
 
 ## Live Demo 
 [https://instant-table.coston.io](https://instant-table.coston.io)
