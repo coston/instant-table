@@ -1,87 +1,24 @@
 {
   "name": "instant-table",
-  "version": "3.0.0",
-  "description": "Instantly build a react responsive table from your array of objects",
-  "main": "dist/index.js",
-  "files": [
-    "dist/Arrow.js",
-    "dist/DataList.js",
-    "dist/DataTable.js",
-    "dist/index.js",
-    "dist/StyleWrapper.js"
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "package",
+    "demo"
   ],
-  "author": "Coston Perkins <coston.perkins@ua.edu> (https://coston.io)",
-  "homepage": "https://github.com/coston/instant-table",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/coston/instant-table.git"
-  },
-  "bugs": {
-    "url": "https://github.com/coston/instant-table/issues"
-  },
-  "license": "MIT",
   "scripts": {
-    "dev": "mdx-go docs && npm run watch",
-    "docs": "mdx-go build docs -d public",
-    "build": "babel -d dist src --copy-files",
-    "clean": "rm -rf dist && mkdir dist",
-    "watch": "babel -w -d dist src --copy-files",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
-    "start": "npm run build; npm run dev",
-    "preversion": "npm run test && npm run format && npm run clean && npm run build && npm run docs",
-    "postpublish": "git push && git push --tag",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
-    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
-  },
-  "jest": {
-    "setupFiles": [
-      "./test/jestsetup.js"
-    ],
-    "testURL": "http://localhost/",
-    "collectCoverage": true,
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ],
-    "moduleNameMapper": {
-      "^.+\\.(css|scss)$": "identity-obj-proxy"
-    }
+    "clean": "npm run clean:package && npm run clean:demo",
+    "clean:package": "npm --workspace package run clean",
+    "clean:demo": "rimraf demo/dist",
+    "build": "npm run build:package && npm run build:demo",
+    "build:package": "npm --workspace package run build",
+    "build:demo": "npm --workspace demo run build",
+    "dev": "npm --workspace demo run dev",
+    "watch:package": "npm --workspace package run watch",
+    "test": "npm --workspace package run test",
+    "serve": "npm --workspace demo run start"
   },
   "devDependencies": {
-    "babel-cli": "6.26.0",
-    "babel-core": "6.26.3",
-    "babel-plugin-transform-object-rest-spread": "6.26.0",
-    "babel-preset-es2015": "6.24.1",
-    "babel-preset-react": "6.24.1",
-    "core-js": "3.38.1",
-    "coveralls": "3.1.1",
-    "enzyme": "3.11.0",
-    "enzyme-adapter-react-16": "1.15.6",
-    "enzyme-to-json": "3.6.2",
-    "identity-obj-proxy": "3.0.0",
-    "jest": "27.5.1",
-    "mdx-go": "1.1.11",
-    "prettier": "3.3.3",
-    "prop-types": "15.8.1",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "react-live": "2.4.1",
-    "react-test-renderer": "18.3.1"
-  },
-  "keywords": [
-    "react",
-    "react-component",
-    "table"
-  ],
-  "directories": {
-    "test": "test"
-  },
-  "dependencies": {
-    "styled-components": "^6.0.0"
-  },
-  "peerDependencies": {
-    "react": "^16.0.0 || ^17.0.0 || ^18.0.0",
-    "react-dom": "^16.0.0 || ^17.0.0 || ^18.0.0"
+    "rimraf": "^3.0.0"
   }
 }

@@ -1,0 +1,39 @@
+version: 2
+updates:
+  # Update npm dependencies for the npm package
+  - package-ecosystem: "npm"
+    directory: "/package"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "deps"
+    open-pull-requests-limit: 10
+    groups:
+      react-and-related:
+        patterns:
+          - "react"
+          - "react-dom"
+          - "@testing-library/react"
+      build-tools:
+        patterns:
+          - "typescript"
+          - "babel"
+
+  # Update npm dependencies for the demo site
+  - package-ecosystem: "npm"
+    directory: "/demo"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "deps"
+    open-pull-requests-limit: 10
+    groups:
+      react-and-related:
+        patterns:
+          - "react"
+          - "react-dom"
+          - "@testing-library/react"
+      build-tools:
+        patterns:
+          - "typescript"
+          - "next"
