@@ -1,8 +1,8 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
-const Arrow = props => {
-  let ascending = props.sortDir === 'ascending'
+const Arrow = (props) => {
+  let ascending = props.sortDir === "ascending";
   return (
     <Svg viewBox="0 0 100 200" width="100" height="200">
       {!(!ascending && props.isCurrent) && (
@@ -13,10 +13,10 @@ const Arrow = props => {
         <polyline points="20 150, 50 180, 80 150" />
       )}
     </Svg>
-  )
-}
+  );
+};
 
-export default Arrow
+export default Arrow;
 
 const Svg = styled.svg`
   stroke: currentColor;
@@ -26,4 +26,4 @@ const Svg = styled.svg`
   fill: none;
   width: auto;
   height: 1.5em;
-`
+`;

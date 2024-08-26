@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-const DataList = props => (
+const DataList = (props) => (
   <div className="lists-container">
     <h2>{props.caption}</h2>
     {props.rows.map((row, i) => (
@@ -14,12 +14,12 @@ const DataList = props => (
                   <dt>{header}</dt>
                   <dd>{row[i]}</dd>
                 </React.Fragment>
-              )
+              ),
           )}
         </dl>
       </div>
     ))}
   </div>
-)
+);
 
-export default DataList
+export default DataList;

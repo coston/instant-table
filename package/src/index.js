@@ -1,73 +1,72 @@
-import React from 'react'
+import React from "react";
 
-import StyleWrapper from './StyleWrapper'
-import DataTable from './DataTable'
-import DataList from './DataList'
+import StyleWrapper from "./StyleWrapper";
+import DataTable from "./DataTable";
+import DataList from "./DataList";
 
-const posNeg = bool => (bool ? 1 : -1)
+const posNeg = (bool) => (bool ? 1 : -1);
 
 class Table extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       tabindex: null,
       headers: [],
       rows: [],
       sortedBy: null,
-      sortDir: 'none',
-    }
+      sortDir: "none",
+    };
 
-    this.sortBy = this.sortBy.bind(this)
-    this.captionID = props.caption
+    this.sortBy = this.sortBy.bind(this);
+    this.captionID = props.caption;
   }
 
   sortBy(i) {
-    let sortDir
-    let ascending = this.state.sortDir === 'ascending'
+    let sortDir;
+    let ascending = this.state.sortDir === "ascending";
     if (i === this.state.sortedBy) {
-      sortDir = !ascending ? 'ascending' : 'descending'
+      sortDir = !ascending ? "ascending" : "descending";
     } else {
-      sortDir = 'ascending'
+      sortDir = "ascending";
     }
-    this.setState(prevState => ({
+    this.setState((prevState) => ({
       rows: prevState.rows
         .slice(0)
-        .sort(
-          (a, b) =>
-            sortDir === 'ascending' ? posNeg(a[i] > b[i]) : posNeg(a[i] < b[i])
+        .sort((a, b) =>
+          sortDir === "ascending" ? posNeg(a[i] > b[i]) : posNeg(a[i] < b[i]),
         ),
       sortedBy: i,
       sortDir: sortDir,
-    }))
+    }));
   }
 
   updateTable() {
     const reducedHeaders = Array.from(
-      new Set(this.props.data.reduce((r, e) => [...r, ...Object.keys(e)], []))
-    )
+      new Set(this.props.data.reduce((r, e) => [...r, ...Object.keys(e)], [])),
+    );
 
     const dataHeaders = this.props.headerOrder
       ? this.props.headerOrder
-      : reducedHeaders
+      : reducedHeaders;
 
     const dataRows = Array.from(
-      this.props.data.map((theData, i) =>
-        dataHeaders.map(element => theData[element] || null)
-      )
-    )
+      this.props.data.map((theData) =>
+        dataHeaders.map((element) => theData[element] || null),
+      ),
+    );
     this.setState({
       headers: dataHeaders,
       rows: dataRows,
-    })
+    });
   }
 
   componentDidMount() {
-    this.updateTable()
+    this.updateTable();
   }
 
   componentDidUpdate(prevProps) {
     if (this.props.data !== prevProps.data) {
-      this.updateTable()
+      this.updateTable();
     }
   }
 
@@ -97,8 +96,8 @@ class Table extends React.Component {
           headers={this.state.headers}
         />
       </StyleWrapper>
-    )
+    );
   }
 }
 
-export default Table
+export default Table;

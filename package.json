@@ -14,6 +14,7 @@
     "build:package": "npm --workspace package run build",
     "build:demo": "npm --workspace demo run build",
     "dev": "npm --workspace demo run dev",
+    "lint": "npm run lint --workspaces",
     "watch:package": "npm --workspace package run watch",
     "test": "npm --workspace package run test",
     "serve": "npm --workspace demo run start",

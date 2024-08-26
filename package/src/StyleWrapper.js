@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const StyleWrapper = styled.div`
   &:focus {
@@ -18,8 +18,8 @@ const StyleWrapper = styled.div`
     overflow-x: auto;
   }
 
-  @media (max-width: ${props =>
-      props.breakpoint ? props.breakpoint : '768px'}) {
+  @media (max-width: ${(props) =>
+      props.breakpoint ? props.breakpoint : "768px"}) {
     .table-container {
       display: none;
     }
@@ -27,13 +27,13 @@ const StyleWrapper = styled.div`
 
   table {
     border-collapse: collapse;
-    color: ${props => (props.textColor ? props.textColor : '#000')};
+    color: ${(props) => (props.textColor ? props.textColor : "#000")};
   }
 
   th,
   td {
     border: 1px solid
-      ${props => (props.borderColor ? props.borderColor : '#ccc')};
+      ${(props) => (props.borderColor ? props.borderColor : "#ccc")};
     padding: 0.75rem;
     text-align: left;
   }
@@ -43,8 +43,9 @@ const StyleWrapper = styled.div`
   }
 
   th {
-    background: ${props => (props.tableColor ? props.tableColor : '#000')};
-    color: ${props => (props.headerTextColor ? props.headerTextColor : '#fff')};
+    background: ${(props) => (props.tableColor ? props.tableColor : "#000")};
+    color: ${(props) =>
+      props.headerTextColor ? props.headerTextColor : "#fff"};
   }
 
   tr:first-of-type th:not(:last-child) {
@@ -64,8 +65,8 @@ const StyleWrapper = styled.div`
     display: block;
   }
 
-  @media (min-width: ${props =>
-      props.breakpoint ? props.breakpoint : '768px'}) {
+  @media (min-width: ${(props) =>
+      props.breakpoint ? props.breakpoint : "768px"}) {
     .lists-container {
       display: none;
     }
@@ -107,9 +108,9 @@ const StyleWrapper = styled.div`
   }
 
   h3 {
-    background: ${props => (props.tableColor ? props.tableColor : '#000')};
+    background: ${(props) => (props.tableColor ? props.tableColor : "#000")};
     color: #fff;
     padding: 0.5rem;
   }
-`
-export default StyleWrapper
+`;
+export default StyleWrapper;

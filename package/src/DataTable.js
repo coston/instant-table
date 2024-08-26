@@ -1,7 +1,7 @@
-import React from 'react'
-import Arrow from './Arrow'
+import React from "react";
+import Arrow from "./Arrow";
 
-const DataTable = props => {
+const DataTable = (props) => {
   return (
     <table
       className="table-container"
@@ -11,7 +11,7 @@ const DataTable = props => {
     >
       <caption id={props.captionID}>
         {props.caption}
-        {props.tabindex === '0' && (
+        {props.tabindex === "0" && (
           <div>
             <small>(scroll to see more)</small>
           </div>
@@ -27,13 +27,13 @@ const DataTable = props => {
               onClick={() =>
                 props.sortable === false ? null : props.sortBy(i)
               }
-              aria-sort={props.sortedBy === i ? props.sortDir : 'none'}
+              aria-sort={props.sortedBy === i ? props.sortDir : "none"}
             >
               {header}
               {props.sortedBy === i && (
                 <button
                   aria-label={`sort by ${header} in ${
-                    props.sortDir !== 'ascending' ? 'ascending' : 'descending'
+                    props.sortDir !== "ascending" ? "ascending" : "descending"
                   } order`}
                 >
                   <Arrow
@@ -49,24 +49,23 @@ const DataTable = props => {
       <tbody>
         {props.rows.map((row, i) => (
           <tr key={i}>
-            {row.map(
-              (cell, i) =>
-                props.rowHeaders && i < 1 ? (
-                  <th scope="row" key={i}>
-                    {cell}
-                  </th>
-                ) : (
-                  <td key={i}>{cell}</td>
-                )
+            {row.map((cell, i) =>
+              props.rowHeaders && i < 1 ? (
+                <th scope="row" key={i}>
+                  {cell}
+                </th>
+              ) : (
+                <td key={i}>{cell}</td>
+              ),
             )}
           </tr>
         ))}
       </tbody>
     </table>
-  )
-}
+  );
+};
 
-export default DataTable
+export default DataTable;
 
 {
   /* <DataTable
