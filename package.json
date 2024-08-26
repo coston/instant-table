@@ -7,18 +7,16 @@
     "demo"
   ],
   "scripts": {
-    "clean": "npm run clean:package && npm run clean:demo",
+    "clean": "rm -rf node_modules && npm run clean:package && npm run clean:demo",
     "clean:package": "npm --workspace package run clean",
-    "clean:demo": "rimraf demo/dist",
+    "clean:demo": "npm --workspace demo run clean",
     "build": "npm run build:package && npm run build:demo",
     "build:package": "npm --workspace package run build",
     "build:demo": "npm --workspace demo run build",
     "dev": "npm --workspace demo run dev",
     "watch:package": "npm --workspace package run watch",
     "test": "npm --workspace package run test",
-    "serve": "npm --workspace demo run start"
-  },
-  "devDependencies": {
-    "rimraf": "^3.0.0"
+    "serve": "npm --workspace demo run start",
+    "postinstall": "npm run build:package"
   }
 }

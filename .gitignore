@@ -36,3 +36,7 @@ out
 
 # Next.js static files
 /static
+
+# Babel output
+package/dist
+.vercel
