@@ -4,11 +4,7 @@
   "description": "Instantly build a react responsive table from your array of objects",
   "main": "dist/index.js",
   "files": [
-    "dist/Arrow.js",
-    "dist/DataList.js",
-    "dist/DataTable.js",
-    "dist/index.js",
-    "dist/StyleWrapper.js"
+    "dist"
   ],
   "author": "Coston Perkins <coston.perkins@ua.edu> (https://coston.io)",
   "homepage": "https://github.com/coston/instant-table",
@@ -21,14 +17,14 @@
   },
   "license": "MIT",
   "scripts": {
-    "dev": "npm run watch",
+    "dev": "babel -w -d dist src --copy-files",
     "build": "babel -d dist src --copy-files",
-    "clean": "rm -rf node_modules && rm -rf dist",
+    "clean": "rm -rf node_modules dist",
     "watch": "babel -w -d dist src --copy-files",
     "format": "prettier --write 'src/**/*.js'",
-    "start": "npm run build; npm run dev",
+    "start": "npm run build && npm run dev",
     "preversion": "npm run test && npm run format && npm run clean && npm run build",
-    "postpublish": "git push && git push --tag",
+    "postpublish": "git push && git push --tags",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
@@ -69,9 +65,5 @@
   },
   "dependencies": {
     "styled-components": "^6.0.0"
-  },
-  "peerDependencies": {
-    "react": "^16.0.0 || ^17.0.0 || ^18.0.0",
-    "react-dom": "^16.0.0 || ^17.0.0 || ^18.0.0"
   }
 }
