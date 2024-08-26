@@ -1,20 +1,20 @@
-import { MetadataRoute } from 'next'
+import { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'react-pkg-demo docs',
-    short_name: 'react-pkg-demo',
-    description: 'react-pkg-demo docs',
-    start_url: '/',
-    display: 'standalone',
-    background_color: '#CBC3E3',
-    theme_color: '#CBC3E3',
+    name: "instant-table docs",
+    short_name: "instant-table",
+    description: "instant-table docs",
+    start_url: "/",
+    display: "standalone",
+    background_color: "#e3cbc3",
+    theme_color: "#e3cbc3",
     icons: [
       {
-        src: '/favicon.ico',
-        sizes: 'any',
-        type: 'image/x-icon',
+        src: "/favicon.ico",
+        sizes: "any",
+        type: "image/x-icon",
       },
     ],
-  }
+  };
 }
