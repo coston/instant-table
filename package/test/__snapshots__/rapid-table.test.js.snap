@@ -1,789 +1,439 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Render Table 1`] = `
-<styled.div>
-  <DataTable
-    headers={
-      Array [
-        "id",
-        "First Name",
-        "Last Name",
-        "Email",
-        "Gender",
-        "IP Address",
-      ]
-    }
-    rows={
-      Array [
-        Array [
-          1,
-          "Blanch",
-          "Elby",
-          "belby0@bing.com",
-          "Female",
-          "112.81.107.207",
-        ],
-        Array [
-          2,
-          "Gilli",
-          "Ebourne",
-          "gebourne1@cornell.edu",
-          "Female",
-          "175.193.73.246",
-        ],
-        Array [
-          3,
-          "Barny",
-          "Curzon",
-          "bcurzon2@forbes.com",
-          "Male",
-          "122.156.241.94",
-        ],
-        Array [
-          4,
-          "Ari",
-          "Bunting",
-          "abunting3@weibo.com",
-          "Male",
-          "93.148.45.9",
-        ],
-        Array [
-          5,
-          "Ogden",
-          "Pendrid",
-          "opendrid4@google.co.uk",
-          "Male",
-          "215.55.19.27",
-        ],
-        Array [
-          6,
-          "Eleni",
-          "Waryk",
-          "ewaryk5@mit.edu",
-          "Female",
-          "26.250.200.175",
-        ],
-        Array [
-          7,
-          "Nicko",
-          "Apted",
-          "napted6@gov.uk",
-          "Male",
-          "217.196.11.166",
-        ],
-        Array [
-          8,
-          "Kaitlin",
-          "Fishbourn",
-          "kfishbourn7@w3.org",
-          "Female",
-          "120.69.29.99",
-        ],
-        Array [
-          9,
-          "Bradan",
-          "Kilgrew",
-          "bkilgrew8@parallels.com",
-          "Male",
-          "165.16.150.204",
-        ],
-        Array [
-          10,
-          "Samuele",
-          "Vina",
-          "svina9@usa.gov",
-          "Male",
-          "22.13.125.114",
-        ],
-        Array [
-          11,
-          "Blinny",
-          "Avery",
-          "baverya@nature.com",
-          "Female",
-          "134.110.245.23",
-        ],
-        Array [
-          12,
-          "Carmen",
-          "Grishanov",
-          "cgrishanovb@cloudflare.com",
-          "Female",
-          "222.115.116.167",
-        ],
-        Array [
-          13,
-          "Crissie",
-          "Burgise",
-          "cburgisec@dmoz.org",
-          "Female",
-          "243.236.213.196",
-        ],
-        Array [
-          14,
-          "Teddy",
-          "Selvey",
-          "tselveyd@salon.com",
-          "Female",
-          "3.181.206.80",
-        ],
-        Array [
-          15,
-          "Mella",
-          "Jeroch",
-          "mjeroche@opera.com",
-          "Female",
-          "11.48.186.157",
-        ],
-        Array [
-          16,
-          "Reta",
-          "Corlett",
-          "rcorlettf@etsy.com",
-          "Female",
-          "190.126.162.29",
-        ],
-        Array [
-          17,
-          "Abrahan",
-          "Gillebride",
-          "agillebrideg@jugem.jp",
-          "Male",
-          "72.73.73.144",
-        ],
-        Array [
-          18,
-          "Windham",
-          "Haines",
-          "whainesh@parallels.com",
-          "Male",
-          "176.227.20.189",
-        ],
-        Array [
-          19,
-          "Lorianna",
-          "Thumann",
-          "lthumanni@pcworld.com",
-          "Female",
-          "33.124.212.69",
-        ],
-        Array [
-          20,
-          "Rockwell",
-          "Ramsted",
-          "rramstedj@mysql.com",
-          "Male",
-          "150.166.66.85",
-        ],
-        Array [
-          21,
-          "Mercy",
-          "Hearsey",
-          "mhearseyk@google.com",
-          "Female",
-          "101.230.251.176",
-        ],
-        Array [
-          22,
-          "Wesley",
-          "Dursley",
-          "wdursleyl@ebay.co.uk",
-          "Male",
-          "238.109.146.5",
-        ],
-        Array [
-          23,
-          "Margareta",
-          "Davioud",
-          "mdavioudm@addthis.com",
-          "Female",
-          "41.94.141.172",
-        ],
-        Array [
-          24,
-          "Trish",
-          "Emerson",
-          "temersonn@jalbum.net",
-          "Female",
-          "137.24.161.213",
-        ],
-        Array [
-          25,
-          "Paulie",
-          "Steffens",
-          "psteffenso@washingtonpost.com",
-          "Female",
-          "115.83.208.158",
-        ],
-      ]
-    }
-    sortBy={[Function]}
-    sortDir="none"
-    sortedBy={null}
-    tabIndex={null}
-  />
-  <DataList
-    headers={
-      Array [
-        "id",
-        "First Name",
-        "Last Name",
-        "Email",
-        "Gender",
-        "IP Address",
-      ]
-    }
-    rows={
-      Array [
-        Array [
-          1,
-          "Blanch",
-          "Elby",
-          "belby0@bing.com",
-          "Female",
-          "112.81.107.207",
-        ],
-        Array [
-          2,
-          "Gilli",
-          "Ebourne",
-          "gebourne1@cornell.edu",
-          "Female",
-          "175.193.73.246",
-        ],
-        Array [
-          3,
-          "Barny",
-          "Curzon",
-          "bcurzon2@forbes.com",
-          "Male",
-          "122.156.241.94",
-        ],
-        Array [
-          4,
-          "Ari",
-          "Bunting",
-          "abunting3@weibo.com",
-          "Male",
-          "93.148.45.9",
-        ],
-        Array [
-          5,
-          "Ogden",
-          "Pendrid",
-          "opendrid4@google.co.uk",
-          "Male",
-          "215.55.19.27",
-        ],
-        Array [
-          6,
-          "Eleni",
-          "Waryk",
-          "ewaryk5@mit.edu",
-          "Female",
-          "26.250.200.175",
-        ],
-        Array [
-          7,
-          "Nicko",
-          "Apted",
-          "napted6@gov.uk",
-          "Male",
-          "217.196.11.166",
-        ],
-        Array [
-          8,
-          "Kaitlin",
-          "Fishbourn",
-          "kfishbourn7@w3.org",
-          "Female",
-          "120.69.29.99",
-        ],
-        Array [
-          9,
-          "Bradan",
-          "Kilgrew",
-          "bkilgrew8@parallels.com",
-          "Male",
-          "165.16.150.204",
-        ],
-        Array [
-          10,
-          "Samuele",
-          "Vina",
-          "svina9@usa.gov",
-          "Male",
-          "22.13.125.114",
-        ],
-        Array [
-          11,
-          "Blinny",
-          "Avery",
-          "baverya@nature.com",
-          "Female",
-          "134.110.245.23",
-        ],
-        Array [
-          12,
-          "Carmen",
-          "Grishanov",
-          "cgrishanovb@cloudflare.com",
-          "Female",
-          "222.115.116.167",
-        ],
-        Array [
-          13,
-          "Crissie",
-          "Burgise",
-          "cburgisec@dmoz.org",
-          "Female",
-          "243.236.213.196",
-        ],
-        Array [
-          14,
-          "Teddy",
-          "Selvey",
-          "tselveyd@salon.com",
-          "Female",
-          "3.181.206.80",
-        ],
-        Array [
-          15,
-          "Mella",
-          "Jeroch",
-          "mjeroche@opera.com",
-          "Female",
-          "11.48.186.157",
-        ],
-        Array [
-          16,
-          "Reta",
-          "Corlett",
-          "rcorlettf@etsy.com",
-          "Female",
-          "190.126.162.29",
-        ],
-        Array [
-          17,
-          "Abrahan",
-          "Gillebride",
-          "agillebrideg@jugem.jp",
-          "Male",
-          "72.73.73.144",
-        ],
-        Array [
-          18,
-          "Windham",
-          "Haines",
-          "whainesh@parallels.com",
-          "Male",
-          "176.227.20.189",
-        ],
-        Array [
-          19,
-          "Lorianna",
-          "Thumann",
-          "lthumanni@pcworld.com",
-          "Female",
-          "33.124.212.69",
-        ],
-        Array [
-          20,
-          "Rockwell",
-          "Ramsted",
-          "rramstedj@mysql.com",
-          "Male",
-          "150.166.66.85",
-        ],
-        Array [
-          21,
-          "Mercy",
-          "Hearsey",
-          "mhearseyk@google.com",
-          "Female",
-          "101.230.251.176",
-        ],
-        Array [
-          22,
-          "Wesley",
-          "Dursley",
-          "wdursleyl@ebay.co.uk",
-          "Male",
-          "238.109.146.5",
-        ],
-        Array [
-          23,
-          "Margareta",
-          "Davioud",
-          "mdavioudm@addthis.com",
-          "Female",
-          "41.94.141.172",
-        ],
-        Array [
-          24,
-          "Trish",
-          "Emerson",
-          "temersonn@jalbum.net",
-          "Female",
-          "137.24.161.213",
-        ],
-        Array [
-          25,
-          "Paulie",
-          "Steffens",
-          "psteffenso@washingtonpost.com",
-          "Female",
-          "115.83.208.158",
-        ],
-      ]
-    }
-  />
-</styled.div>
+<DocumentFragment>
+  <div
+    class="sc-braxZu dzjGaI"
+  >
+    <table
+      class="table-container"
+      role="group"
+    >
+      <caption />
+      <thead>
+        <tr>
+          <th
+            aria-sort="none"
+            role="columnheader"
+            scope="col"
+          >
+            id
+          </th>
+          <th
+            aria-sort="none"
+            role="columnheader"
+            scope="col"
+          >
+            First Name
+          </th>
+          <th
+            aria-sort="none"
+            role="columnheader"
+            scope="col"
+          >
+            Last Name
+          </th>
+          <th
+            aria-sort="none"
+            role="columnheader"
+            scope="col"
+          >
+            Email
+          </th>
+          <th
+            aria-sort="none"
+            role="columnheader"
+            scope="col"
+          >
+            Gender
+          </th>
+          <th
+            aria-sort="none"
+            role="columnheader"
+            scope="col"
+          >
+            IP Address
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            1
+          </td>
+          <td>
+            Blanch
+          </td>
+          <td>
+            Elby
+          </td>
+          <td>
+            belby0@bing.com
+          </td>
+          <td>
+            Female
+          </td>
+          <td>
+            112.81.107.207
+          </td>
+        </tr>
+        <tr>
+          <td>
+            2
+          </td>
+          <td>
+            Gilli
+          </td>
+          <td>
+            Ebourne
+          </td>
+          <td>
+            gebourne1@cornell.edu
+          </td>
+          <td>
+            Female
+          </td>
+          <td>
+            175.193.73.246
+          </td>
+        </tr>
+        <tr>
+          <td>
+            3
+          </td>
+          <td>
+            Barny
+          </td>
+          <td>
+            Curzon
+          </td>
+          <td>
+            bcurzon2@forbes.com
+          </td>
+          <td>
+            Male
+          </td>
+          <td>
+            122.156.241.94
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div
+      class="lists-container"
+    >
+      <h2 />
+      <div>
+        <hr />
+        <dl>
+          <dt>
+            id
+          </dt>
+          <dd>
+            1
+          </dd>
+          <dt>
+            First Name
+          </dt>
+          <dd>
+            Blanch
+          </dd>
+          <dt>
+            Last Name
+          </dt>
+          <dd>
+            Elby
+          </dd>
+          <dt>
+            Email
+          </dt>
+          <dd>
+            belby0@bing.com
+          </dd>
+          <dt>
+            Gender
+          </dt>
+          <dd>
+            Female
+          </dd>
+          <dt>
+            IP Address
+          </dt>
+          <dd>
+            112.81.107.207
+          </dd>
+        </dl>
+      </div>
+      <div>
+        <hr />
+        <dl>
+          <dt>
+            id
+          </dt>
+          <dd>
+            2
+          </dd>
+          <dt>
+            First Name
+          </dt>
+          <dd>
+            Gilli
+          </dd>
+          <dt>
+            Last Name
+          </dt>
+          <dd>
+            Ebourne
+          </dd>
+          <dt>
+            Email
+          </dt>
+          <dd>
+            gebourne1@cornell.edu
+          </dd>
+          <dt>
+            Gender
+          </dt>
+          <dd>
+            Female
+          </dd>
+          <dt>
+            IP Address
+          </dt>
+          <dd>
+            175.193.73.246
+          </dd>
+        </dl>
+      </div>
+      <div>
+        <hr />
+        <dl>
+          <dt>
+            id
+          </dt>
+          <dd>
+            3
+          </dd>
+          <dt>
+            First Name
+          </dt>
+          <dd>
+            Barny
+          </dd>
+          <dt>
+            Last Name
+          </dt>
+          <dd>
+            Curzon
+          </dd>
+          <dt>
+            Email
+          </dt>
+          <dd>
+            bcurzon2@forbes.com
+          </dd>
+          <dt>
+            Gender
+          </dt>
+          <dd>
+            Male
+          </dd>
+          <dt>
+            IP Address
+          </dt>
+          <dd>
+            122.156.241.94
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
 `;
 
 exports[`Render Table with customizations 1`] = `
-<styled.div
-  breakpoint="800px"
-  headerTextColor="black"
-  tableColor="#44a08d"
->
-  <DataTable
-    caption="Great Data"
-    captionID="Great Data"
-    headers={
-      Array [
-        "Email",
-        "IP Address",
-        "Last Name",
-        "First Name",
-      ]
-    }
-    rowHeaders={true}
-    rows={
-      Array [
-        Array [
-          "belby0@bing.com",
-          "112.81.107.207",
-          "Elby",
-          "Blanch",
-        ],
-        Array [
-          "gebourne1@cornell.edu",
-          "175.193.73.246",
-          "Ebourne",
-          "Gilli",
-        ],
-        Array [
-          "bcurzon2@forbes.com",
-          "122.156.241.94",
-          "Curzon",
-          "Barny",
-        ],
-        Array [
-          "abunting3@weibo.com",
-          "93.148.45.9",
-          "Bunting",
-          "Ari",
-        ],
-        Array [
-          "opendrid4@google.co.uk",
-          "215.55.19.27",
-          "Pendrid",
-          "Ogden",
-        ],
-        Array [
-          "ewaryk5@mit.edu",
-          "26.250.200.175",
-          "Waryk",
-          "Eleni",
-        ],
-        Array [
-          "napted6@gov.uk",
-          "217.196.11.166",
-          "Apted",
-          "Nicko",
-        ],
-        Array [
-          "kfishbourn7@w3.org",
-          "120.69.29.99",
-          "Fishbourn",
-          "Kaitlin",
-        ],
-        Array [
-          "bkilgrew8@parallels.com",
-          "165.16.150.204",
-          "Kilgrew",
-          "Bradan",
-        ],
-        Array [
-          "svina9@usa.gov",
-          "22.13.125.114",
-          "Vina",
-          "Samuele",
-        ],
-        Array [
-          "baverya@nature.com",
-          "134.110.245.23",
-          "Avery",
-          "Blinny",
-        ],
-        Array [
-          "cgrishanovb@cloudflare.com",
-          "222.115.116.167",
-          "Grishanov",
-          "Carmen",
-        ],
-        Array [
-          "cburgisec@dmoz.org",
-          "243.236.213.196",
-          "Burgise",
-          "Crissie",
-        ],
-        Array [
-          "tselveyd@salon.com",
-          "3.181.206.80",
-          "Selvey",
-          "Teddy",
-        ],
-        Array [
-          "mjeroche@opera.com",
-          "11.48.186.157",
-          "Jeroch",
-          "Mella",
-        ],
-        Array [
-          "rcorlettf@etsy.com",
-          "190.126.162.29",
-          "Corlett",
-          "Reta",
-        ],
-        Array [
-          "agillebrideg@jugem.jp",
-          "72.73.73.144",
-          "Gillebride",
-          "Abrahan",
-        ],
-        Array [
-          "whainesh@parallels.com",
-          "176.227.20.189",
-          "Haines",
-          "Windham",
-        ],
-        Array [
-          "lthumanni@pcworld.com",
-          "33.124.212.69",
-          "Thumann",
-          "Lorianna",
-        ],
-        Array [
-          "rramstedj@mysql.com",
-          "150.166.66.85",
-          "Ramsted",
-          "Rockwell",
-        ],
-        Array [
-          "mhearseyk@google.com",
-          "101.230.251.176",
-          "Hearsey",
-          "Mercy",
-        ],
-        Array [
-          "wdursleyl@ebay.co.uk",
-          "238.109.146.5",
-          "Dursley",
-          "Wesley",
-        ],
-        Array [
-          "mdavioudm@addthis.com",
-          "41.94.141.172",
-          "Davioud",
-          "Margareta",
-        ],
-        Array [
-          "temersonn@jalbum.net",
-          "137.24.161.213",
-          "Emerson",
-          "Trish",
-        ],
-        Array [
-          "psteffenso@washingtonpost.com",
-          "115.83.208.158",
-          "Steffens",
-          "Paulie",
-        ],
-      ]
-    }
-    sortBy={[Function]}
-    sortDir="none"
-    sortable={false}
-    sortedBy={null}
-    tabIndex={null}
-  />
-  <DataList
-    caption="Great Data"
-    headers={
-      Array [
-        "Email",
-        "IP Address",
-        "Last Name",
-        "First Name",
-      ]
-    }
-    rowHeaders={true}
-    rows={
-      Array [
-        Array [
-          "belby0@bing.com",
-          "112.81.107.207",
-          "Elby",
-          "Blanch",
-        ],
-        Array [
-          "gebourne1@cornell.edu",
-          "175.193.73.246",
-          "Ebourne",
-          "Gilli",
-        ],
-        Array [
-          "bcurzon2@forbes.com",
-          "122.156.241.94",
-          "Curzon",
-          "Barny",
-        ],
-        Array [
-          "abunting3@weibo.com",
-          "93.148.45.9",
-          "Bunting",
-          "Ari",
-        ],
-        Array [
-          "opendrid4@google.co.uk",
-          "215.55.19.27",
-          "Pendrid",
-          "Ogden",
-        ],
-        Array [
-          "ewaryk5@mit.edu",
-          "26.250.200.175",
-          "Waryk",
-          "Eleni",
-        ],
-        Array [
-          "napted6@gov.uk",
-          "217.196.11.166",
-          "Apted",
-          "Nicko",
-        ],
-        Array [
-          "kfishbourn7@w3.org",
-          "120.69.29.99",
-          "Fishbourn",
-          "Kaitlin",
-        ],
-        Array [
-          "bkilgrew8@parallels.com",
-          "165.16.150.204",
-          "Kilgrew",
-          "Bradan",
-        ],
-        Array [
-          "svina9@usa.gov",
-          "22.13.125.114",
-          "Vina",
-          "Samuele",
-        ],
-        Array [
-          "baverya@nature.com",
-          "134.110.245.23",
-          "Avery",
-          "Blinny",
-        ],
-        Array [
-          "cgrishanovb@cloudflare.com",
-          "222.115.116.167",
-          "Grishanov",
-          "Carmen",
-        ],
-        Array [
-          "cburgisec@dmoz.org",
-          "243.236.213.196",
-          "Burgise",
-          "Crissie",
-        ],
-        Array [
-          "tselveyd@salon.com",
-          "3.181.206.80",
-          "Selvey",
-          "Teddy",
-        ],
-        Array [
-          "mjeroche@opera.com",
-          "11.48.186.157",
-          "Jeroch",
-          "Mella",
-        ],
-        Array [
-          "rcorlettf@etsy.com",
-          "190.126.162.29",
-          "Corlett",
-          "Reta",
-        ],
-        Array [
-          "agillebrideg@jugem.jp",
-          "72.73.73.144",
-          "Gillebride",
-          "Abrahan",
-        ],
-        Array [
-          "whainesh@parallels.com",
-          "176.227.20.189",
-          "Haines",
-          "Windham",
-        ],
-        Array [
-          "lthumanni@pcworld.com",
-          "33.124.212.69",
-          "Thumann",
-          "Lorianna",
-        ],
-        Array [
-          "rramstedj@mysql.com",
-          "150.166.66.85",
-          "Ramsted",
-          "Rockwell",
-        ],
-        Array [
-          "mhearseyk@google.com",
-          "101.230.251.176",
-          "Hearsey",
-          "Mercy",
-        ],
-        Array [
-          "wdursleyl@ebay.co.uk",
-          "238.109.146.5",
-          "Dursley",
-          "Wesley",
-        ],
-        Array [
-          "mdavioudm@addthis.com",
-          "41.94.141.172",
-          "Davioud",
-          "Margareta",
-        ],
-        Array [
-          "temersonn@jalbum.net",
-          "137.24.161.213",
-          "Emerson",
-          "Trish",
-        ],
-        Array [
-          "psteffenso@washingtonpost.com",
-          "115.83.208.158",
-          "Steffens",
-          "Paulie",
-        ],
-      ]
-    }
-  />
-</styled.div>
+<DocumentFragment>
+  <div
+    breakpoint="800px"
+    class="sc-braxZu kKdAEO"
+    headertextcolor="black"
+    tablecolor="#44a08d"
+  >
+    <table
+      aria-labelledby="Great Data"
+      class="table-container"
+      role="group"
+    >
+      <caption
+        id="Great Data"
+      >
+        Great Data
+      </caption>
+      <thead>
+        <tr>
+          <th
+            aria-sort="none"
+            role="columnheader"
+            scope="col"
+          >
+            Email
+          </th>
+          <th
+            aria-sort="none"
+            role="columnheader"
+            scope="col"
+          >
+            IP Address
+          </th>
+          <th
+            aria-sort="none"
+            role="columnheader"
+            scope="col"
+          >
+            Last Name
+          </th>
+          <th
+            aria-sort="none"
+            role="columnheader"
+            scope="col"
+          >
+            First Name
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th
+            scope="row"
+          >
+            belby0@bing.com
+          </th>
+          <td>
+            112.81.107.207
+          </td>
+          <td>
+            Elby
+          </td>
+          <td>
+            Blanch
+          </td>
+        </tr>
+        <tr>
+          <th
+            scope="row"
+          >
+            gebourne1@cornell.edu
+          </th>
+          <td>
+            175.193.73.246
+          </td>
+          <td>
+            Ebourne
+          </td>
+          <td>
+            Gilli
+          </td>
+        </tr>
+        <tr>
+          <th
+            scope="row"
+          >
+            bcurzon2@forbes.com
+          </th>
+          <td>
+            122.156.241.94
+          </td>
+          <td>
+            Curzon
+          </td>
+          <td>
+            Barny
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div
+      class="lists-container"
+    >
+      <h2>
+        Great Data
+      </h2>
+      <div>
+        <h3>
+          belby0@bing.com
+        </h3>
+        <dl>
+          <dt>
+            IP Address
+          </dt>
+          <dd>
+            112.81.107.207
+          </dd>
+          <dt>
+            Last Name
+          </dt>
+          <dd>
+            Elby
+          </dd>
+          <dt>
+            First Name
+          </dt>
+          <dd>
+            Blanch
+          </dd>
+        </dl>
+      </div>
+      <div>
+        <h3>
+          gebourne1@cornell.edu
+        </h3>
+        <dl>
+          <dt>
+            IP Address
+          </dt>
+          <dd>
+            175.193.73.246
+          </dd>
+          <dt>
+            Last Name
+          </dt>
+          <dd>
+            Ebourne
+          </dd>
+          <dt>
+            First Name
+          </dt>
+          <dd>
+            Gilli
+          </dd>
+        </dl>
+      </div>
+      <div>
+        <h3>
+          bcurzon2@forbes.com
+        </h3>
+        <dl>
+          <dt>
+            IP Address
+          </dt>
+          <dd>
+            122.156.241.94
+          </dd>
+          <dt>
+            Last Name
+          </dt>
+          <dd>
+            Curzon
+          </dd>
+          <dt>
+            First Name
+          </dt>
+          <dd>
+            Barny
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
 `;
