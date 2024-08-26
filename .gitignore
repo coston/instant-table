@@ -29,3 +29,14 @@ public
 *.sublime-*
 .idea/
 *.DS_Store
+
+# Next.js build output
+.next
+out
+
+# Next.js static files
+/static
+
+# Babel output
+package/dist
+.vercel

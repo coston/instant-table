@@ -1,0 +1,439 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Table 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-braxZu dzjGaI"
+  >
+    <table
+      class="table-container"
+      role="group"
+    >
+      <caption />
+      <thead>
+        <tr>
+          <th
+            aria-sort="none"
+            role="columnheader"
+            scope="col"
+          >
+            id
+          </th>
+          <th
+            aria-sort="none"
+            role="columnheader"
+            scope="col"
+          >
+            First Name
+          </th>
+          <th
+            aria-sort="none"
+            role="columnheader"
+            scope="col"
+          >
+            Last Name
+          </th>
+          <th
+            aria-sort="none"
+            role="columnheader"
+            scope="col"
+          >
+            Email
+          </th>
+          <th
+            aria-sort="none"
+            role="columnheader"
+            scope="col"
+          >
+            Gender
+          </th>
+          <th
+            aria-sort="none"
+            role="columnheader"
+            scope="col"
+          >
+            IP Address
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            1
+          </td>
+          <td>
+            Blanch
+          </td>
+          <td>
+            Elby
+          </td>
+          <td>
+            belby0@bing.com
+          </td>
+          <td>
+            Female
+          </td>
+          <td>
+            112.81.107.207
+          </td>
+        </tr>
+        <tr>
+          <td>
+            2
+          </td>
+          <td>
+            Gilli
+          </td>
+          <td>
+            Ebourne
+          </td>
+          <td>
+            gebourne1@cornell.edu
+          </td>
+          <td>
+            Female
+          </td>
+          <td>
+            175.193.73.246
+          </td>
+        </tr>
+        <tr>
+          <td>
+            3
+          </td>
+          <td>
+            Barny
+          </td>
+          <td>
+            Curzon
+          </td>
+          <td>
+            bcurzon2@forbes.com
+          </td>
+          <td>
+            Male
+          </td>
+          <td>
+            122.156.241.94
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div
+      class="lists-container"
+    >
+      <h2 />
+      <div>
+        <hr />
+        <dl>
+          <dt>
+            id
+          </dt>
+          <dd>
+            1
+          </dd>
+          <dt>
+            First Name
+          </dt>
+          <dd>
+            Blanch
+          </dd>
+          <dt>
+            Last Name
+          </dt>
+          <dd>
+            Elby
+          </dd>
+          <dt>
+            Email
+          </dt>
+          <dd>
+            belby0@bing.com
+          </dd>
+          <dt>
+            Gender
+          </dt>
+          <dd>
+            Female
+          </dd>
+          <dt>
+            IP Address
+          </dt>
+          <dd>
+            112.81.107.207
+          </dd>
+        </dl>
+      </div>
+      <div>
+        <hr />
+        <dl>
+          <dt>
+            id
+          </dt>
+          <dd>
+            2
+          </dd>
+          <dt>
+            First Name
+          </dt>
+          <dd>
+            Gilli
+          </dd>
+          <dt>
+            Last Name
+          </dt>
+          <dd>
+            Ebourne
+          </dd>
+          <dt>
+            Email
+          </dt>
+          <dd>
+            gebourne1@cornell.edu
+          </dd>
+          <dt>
+            Gender
+          </dt>
+          <dd>
+            Female
+          </dd>
+          <dt>
+            IP Address
+          </dt>
+          <dd>
+            175.193.73.246
+          </dd>
+        </dl>
+      </div>
+      <div>
+        <hr />
+        <dl>
+          <dt>
+            id
+          </dt>
+          <dd>
+            3
+          </dd>
+          <dt>
+            First Name
+          </dt>
+          <dd>
+            Barny
+          </dd>
+          <dt>
+            Last Name
+          </dt>
+          <dd>
+            Curzon
+          </dd>
+          <dt>
+            Email
+          </dt>
+          <dd>
+            bcurzon2@forbes.com
+          </dd>
+          <dt>
+            Gender
+          </dt>
+          <dd>
+            Male
+          </dd>
+          <dt>
+            IP Address
+          </dt>
+          <dd>
+            122.156.241.94
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Render Table with customizations 1`] = `
+<DocumentFragment>
+  <div
+    breakpoint="800px"
+    class="sc-braxZu kKdAEO"
+    headertextcolor="black"
+    tablecolor="#44a08d"
+  >
+    <table
+      aria-labelledby="Great Data"
+      class="table-container"
+      role="group"
+    >
+      <caption
+        id="Great Data"
+      >
+        Great Data
+      </caption>
+      <thead>
+        <tr>
+          <th
+            aria-sort="none"
+            role="columnheader"
+            scope="col"
+          >
+            Email
+          </th>
+          <th
+            aria-sort="none"
+            role="columnheader"
+            scope="col"
+          >
+            IP Address
+          </th>
+          <th
+            aria-sort="none"
+            role="columnheader"
+            scope="col"
+          >
+            Last Name
+          </th>
+          <th
+            aria-sort="none"
+            role="columnheader"
+            scope="col"
+          >
+            First Name
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th
+            scope="row"
+          >
+            belby0@bing.com
+          </th>
+          <td>
+            112.81.107.207
+          </td>
+          <td>
+            Elby
+          </td>
+          <td>
+            Blanch
+          </td>
+        </tr>
+        <tr>
+          <th
+            scope="row"
+          >
+            gebourne1@cornell.edu
+          </th>
+          <td>
+            175.193.73.246
+          </td>
+          <td>
+            Ebourne
+          </td>
+          <td>
+            Gilli
+          </td>
+        </tr>
+        <tr>
+          <th
+            scope="row"
+          >
+            bcurzon2@forbes.com
+          </th>
+          <td>
+            122.156.241.94
+          </td>
+          <td>
+            Curzon
+          </td>
+          <td>
+            Barny
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div
+      class="lists-container"
+    >
+      <h2>
+        Great Data
+      </h2>
+      <div>
+        <h3>
+          belby0@bing.com
+        </h3>
+        <dl>
+          <dt>
+            IP Address
+          </dt>
+          <dd>
+            112.81.107.207
+          </dd>
+          <dt>
+            Last Name
+          </dt>
+          <dd>
+            Elby
+          </dd>
+          <dt>
+            First Name
+          </dt>
+          <dd>
+            Blanch
+          </dd>
+        </dl>
+      </div>
+      <div>
+        <h3>
+          gebourne1@cornell.edu
+        </h3>
+        <dl>
+          <dt>
+            IP Address
+          </dt>
+          <dd>
+            175.193.73.246
+          </dd>
+          <dt>
+            Last Name
+          </dt>
+          <dd>
+            Ebourne
+          </dd>
+          <dt>
+            First Name
+          </dt>
+          <dd>
+            Gilli
+          </dd>
+        </dl>
+      </div>
+      <div>
+        <h3>
+          bcurzon2@forbes.com
+        </h3>
+        <dl>
+          <dt>
+            IP Address
+          </dt>
+          <dd>
+            122.156.241.94
+          </dd>
+          <dt>
+            Last Name
+          </dt>
+          <dd>
+            Curzon
+          </dd>
+          <dt>
+            First Name
+          </dt>
+          <dd>
+            Barny
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
