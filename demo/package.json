@@ -22,7 +22,7 @@
     "@babel/eslint-parser": "^7.25.1",
     "@next/eslint-plugin-next": "^14.0.4",
     "@types/node": "^22.5.0",
-    "@types/react": "^18.2.46",
+    "@types/react": "^18.3.6",
     "@types/react-dom": "^18.2.18",
     "eslint-config-next": "^14.2.6",
     "typescript": "^5.3.3"
