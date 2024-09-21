@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "instant-table": "file:../package",
-    "next": "^14.2.10",
+    "next": "^14.2.13",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-pkg-demo": "^0.10.0"
@@ -25,6 +25,6 @@
     "@types/react": "^18.2.46",
     "@types/react-dom": "^18.2.18",
     "eslint-config-next": "^14.2.6",
-    "typescript": "^5.3.3"
+    "typescript": "^5.6.2"
   }
 }
