@@ -1,6 +1,5 @@
 version: 2
 updates:
-  # Update npm dependencies for the npm package
   - package-ecosystem: "npm"
     directory: "/package"
     schedule:
@@ -20,8 +19,21 @@ updates:
         patterns:
           - "typescript"
           - "babel"
+      types:
+        patterns:
+          - "@types/*"
+      linting:
+        patterns:
+          - "eslint"
+          - "prettier"
+      testing:
+        patterns:
+          - "jest"
+          - "@testing-library/*"
+      all-other-deps:
+        patterns:
+          - "*"
 
-  # Update npm dependencies for the demo site
   - package-ecosystem: "npm"
     directory: "/demo"
     schedule:
@@ -29,6 +41,8 @@ updates:
     commit-message:
       prefix: "deps"
     open-pull-requests-limit: 10
+    automerge: true
+    automerge-type: "pr"
     groups:
       react-and-related:
         patterns:
@@ -39,6 +53,17 @@ updates:
         patterns:
           - "typescript"
           - "next"
+      types:
+        patterns:
+          - "@types/*"
+      linting:
+        patterns:
+          - "eslint"
+          - "prettier"
+      testing:
+        patterns:
+          - "jest"
+          - "@testing-library/*"
       all-other-deps:
         patterns:
           - "*"
