@@ -19,7 +19,7 @@
     "react-pkg-demo": "^0.10.0"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.25.8",
+    "@babel/eslint-parser": "^7.25.9",
     "@next/eslint-plugin-next": "^14.2.14",
     "@types/node": "^22.10.2",
     "@types/react": "^18.3.12",
