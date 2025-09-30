@@ -58,7 +58,7 @@
     "eslint-plugin-react": "^7.28.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^29.x.x",
-    "jest-environment-jsdom": "^29.x.x",
+    "jest-environment-jsdom": "^30.x.x",
     "prettier": "^3.3.3"
   },
   "keywords": [
