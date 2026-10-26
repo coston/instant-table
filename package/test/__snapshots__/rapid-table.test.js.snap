@@ -1,9 +1,9 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Render Table 1`] = `
 <DocumentFragment>
   <div
-    class="sc-braxZu dzjGaI"
+    class="sc-blHHSb kZeDeA"
   >
     <table
       class="table-container"
@@ -255,7 +255,7 @@ exports[`Render Table with customizations 1`] = `
 <DocumentFragment>
   <div
     breakpoint="800px"
-    class="sc-braxZu kKdAEO"
+    class="sc-blHHSb exrGga"
     headertextcolor="black"
     tablecolor="#44a08d"
   >
